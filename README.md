@@ -17,6 +17,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Prepare Data
+
+```bash
+from datasets import load_dataset
+
+train_set = load_dataset("tanganke/gtsrb", split="train")
+test_set = load_dataset("tanganke/gtsrb", split="test")
+```
+
+
 ## Running the notebook
 
 ```bash
